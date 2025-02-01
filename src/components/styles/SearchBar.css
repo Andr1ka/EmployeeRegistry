@@ -1,0 +1,22 @@
+/* Стили для всего серчбара */
+.search-bar {
+    width: 100%; /* Растягиваем на всю ширину контейнера */
+    padding: 10px 15px; /* Внутренние отступы */
+    font-size: 16px;
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    outline: none; /* Убираем обводку при фокусе */
+    transition: border-color 0.3s ease; /* Плавное изменение цвета границы */
+   
+}
+    /* Стили для поисковой строки при фокусе */
+    .search-bar:focus {
+        border-color: #4CAF50; /* Изменяем цвет границы при фокусе */
+        box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Легкая тень при фокусе */
+    }
+
+    /* Стили для плейсхолдера */
+    .search-bar::placeholder {
+        color: #999; /* Цвет текста плейсхолдера */
+        font-style: italic; /* Курсив для плейсхолдера */
+    }

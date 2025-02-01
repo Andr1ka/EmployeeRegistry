@@ -1,0 +1,31 @@
+/* Стили для пагинации */
+.pagination-list {
+    display: flex; 
+    justify-content: center; 
+    list-style: none; /* Убираем маркеры списка */
+    padding: 10px; /* Убираем отступы */
+    margin: 0; 
+    gap: 5px; /* Добавляем отступ между элементами */
+}
+
+/* Стили для элементов списка */
+.pagination-item {
+    margin: 0; 
+}
+
+    /* Стили для кнопок */
+    .pagination-item button {
+        padding: 10px 15px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        background-color: #f9f9f9;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+        .pagination-item button:hover {
+            background-color: #3498db;
+            color: white;
+        }
+
+        

@@ -1,0 +1,64 @@
+/* Общие стили для контейнера */
+.employee-list-container {
+    font-family: Arial, sans-serif;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    opacity: 1;
+    margin: 0 auto;
+}
+
+/* Стили для поисковой строки */
+.search-bar {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+    margin-bottom: 20px; /* Отступ снизу */
+    background: white; 
+}
+
+    .search-bar:focus {
+        border-color: #3498db; /* Синий цвет границы при фокусе */
+        box-shadow: 0 0 5px rgba(52, 152, 219, 0.5); /* Легкая тень при фокусе */
+    }
+
+    .search-bar::placeholder {
+        color: #999;
+        font-style: italic;
+    }
+
+/* Стили для таблицы */
+.employee-list-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.employee-list-container th,
+.employee-list-container td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.employee-list-container th {
+    background-color: #3498db; /* Синий фон для заголовков */
+    color: white; /* Белый текст */
+    font-weight: bold;
+}
+
+.employee-list-container tr:hover {
+    background-color: #e6f3ff; /* Мягкий синий при наведении */
+    cursor: pointer;
+}
+
+/* Стили для строки с данными сотрудника */
+.employee-list-container tr {
+    transition: background-color 0.3s ease;
+}
